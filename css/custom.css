@@ -1,0 +1,121 @@
+/* 使 H1 ~ H2 更易读 */
+h1{
+    font-size:30px
+}
+h2{
+    font-size:26px
+}
+h3{
+    font-size:23px
+}
+h4{
+    font-size:20px
+}
+h5{
+    font-size:18px
+}
+h6{
+    font-size:18px;
+    color:var(--hassan-gray-darker)
+}
+#article-container h1:before{
+    content:"H1";
+    margin:-.2rem 0 0 -2.3rem;
+    font-size:25px
+}
+#article-container h2:before{
+    content:"H2";
+    margin:-.2rem 0 0 -2.2rem;
+    font-size:23px
+}
+#article-container h3:before{
+    content:"H3";
+    margin:-.1rem 0 0 -2.1rem;
+    font-size:21px
+}
+#article-container h4:before{
+    content:"H4";
+    margin:-.07rem 0 0 -1.9rem;
+    font-size:18px
+}
+#article-container h5:before{
+    content:"H5";
+    margin:-.02rem 0 0 -1.8rem;
+    font-size:16px
+}
+#article-container h6:before{
+    content:"H6";
+    margin:-.02rem 0 0 -1.8rem;
+    font-size:16px
+}
+/* 图片描述文字居中 */
+p .img-alt {
+    display: block !important;
+}
+/* 思源柔黑等宽 */
+@font-face {
+    font-family:'Gen Jyuu Gothic Monospace';
+    src: url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/GenJyuuGothic-Monospace-Regular-2.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/GenJyuuGothic-Monospace-Regular-2.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/JonnyJong/blogStaticResource@main/fonts/GenJyuuGothic-Monospace-Regular-2.ttf') format("opentype");
+    font-display:swap
+}
+/* 文章页背景 */
+.layout > div:first-child:not(.recent-posts) {
+    /* 以下代表白色透明度为0.1 */
+    background: rgba(255,255,255,.1);
+}
+/* 所有背景（包括首页卡片、文章页、页面页等） */
+#aside-content .card-widget {
+    /* 以下代表白色透明度为0.1 */
+    background: rgba(255,255,255,.1);
+}
+/* 首页最近文章背景透明 */
+#recent-posts > .recent-post-item{
+    background: rgba(255,255,255,.1);
+}
+/* 版权信息背景透明 */
+#post .post-copyright{
+    background-color: #eff1f388;
+}
+[data-theme="dark"] #post .post-copyright{
+    background-color: #00000088;
+}
+/* 背景渐变 */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body {
+    background: var(--global-bg);
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* 实际用 */
+    background: linear-gradient(-45deg, #23a6d510, #23d5ab10, #23a6d510, #23d5ab10);
+    /* 调试用 */
+    /* background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab); */
+    animation: gradientBG 15s ease infinite;
+  }
+/* 优化链接颜色 */
+#article-container a {
+    color: #178b8b;
+}
+/* 修正hr颜色 */
+hr{
+    border: 2px dashed #009688;
+    --hr-before-color: #009688;
+}
