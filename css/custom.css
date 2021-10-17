@@ -183,3 +183,11 @@ code, kbd, samp {
     font-size: var(--global-font-size);
     font-family: UbuntuMono !important;
 }
+/* 让进度条更显眼并自定义颜色 */
+.pace .pace-progress {
+    background: #009688 !important;
+    height: 6px !important;
+}
+.pace .pace-progress-inner {
+    box-shadow: 0 0 10px #00968800, 0 0 5px #00968800 !important;
+}
