@@ -490,6 +490,111 @@ body::after {
 [data-theme="dark"] .aplayer.aplayer-withlist .aplayer-info{
   border-bottom: 1px solid #404040;
 }
+/* Note亮暗色适配 */
+.note.default.flat{
+  background: #7771;
+}
+.note.primary.flat{
+  background: #6f42c111;
+}
+.note.success.flat{
+  background: #5cb85c11;
+}
+.note.info.flat{
+  background: #428bca11;
+}
+.note.warning.flat{
+  background: #f0ad4e11;
+}
+.note.danger.flat{
+  background: #d9534f11;
+}
+.note.flat{
+  color: var(--font-color);
+}
+/* Tag-hide亮暗色适配 */
+.hide-toggle>.hide-button{
+  background: #7772;
+  color: var(--font-color);
+}
+.hide-toggle{
+  border: 1px solid var(--tab-border-color);
+}
+/* 好康的链接暗色适配 */
+#article-container a.link-card{
+  background: var(--global-bg) !important;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%) !important;
+  color: var(--font-color) !important;
+}
+#article-container a.link-card:hover{
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 40%) !important;
+}
+#article-container a.link-card p.url{
+  color: var(--font-color) !important;
+}
+[data-theme=dark] .note{
+  filter: none;
+}
+/* 隐藏内容暗色适配 */
+psw:hover{
+  color: var(--font-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -858,4 +963,53 @@ body::after {
 }
 [data-theme="dark"] .aplayer.aplayer-withlist .aplayer-info{
   border-bottom: 1px solid #404040;
+}
+/* Note亮暗色适配 */
+.note.default.flat{
+  background: #7771;
+}
+.note.primary.flat{
+  background: #6f42c111;
+}
+.note.success.flat{
+  background: #5cb85c11;
+}
+.note.info.flat{
+  background: #428bca11;
+}
+.note.warning.flat{
+  background: #f0ad4e11;
+}
+.note.danger.flat{
+  background: #d9534f11;
+}
+.note.flat{
+  color: var(--font-color);
+}
+[data-theme=dark] .note{
+  filter: none;
+}
+/* Tag-hide亮暗色适配 */
+.hide-toggle>.hide-button{
+  background: #7772;
+  color: var(--font-color);
+}
+.hide-toggle{
+  border: 1px solid var(--tab-border-color);
+}
+/* 好康的链接暗色适配 */
+#article-container a.link-card{
+  background: var(--global-bg) !important;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%) !important;
+  color: var(--font-color) !important;
+}
+#article-container a.link-card:hover{
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 40%) !important;
+}
+#article-container a.link-card p.url{
+  color: var(--font-color) !important;
+}
+/* 隐藏内容暗色适配 */
+psw:hover{
+  color: var(--font-color) !important;
 }
