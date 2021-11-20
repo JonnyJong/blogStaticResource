@@ -539,7 +539,13 @@ body::after {
 psw:hover{
   color: var(--font-color) !important;
 }
-
+/* 进度条暗色适配 */
+[data-theme="dark"] .progress{
+  filter: brightness(.7);
+}
+[data-theme="dark"] .aplayer .aplayer-list ol li:hover{
+  background: #444;
+}
 
 
 
@@ -814,6 +820,9 @@ body::after {
 [data-theme="dark"] .aplayer.aplayer-withlist .aplayer-info{
   border-bottom: 1px solid #404040;
 }
+[data-theme="dark"] .aplayer .aplayer-list ol li:hover{
+  background: #444;
+}
 /* Note亮暗色适配 */
 .note.default.flat{
   background: #7771;
@@ -862,4 +871,8 @@ body::after {
 /* 隐藏内容暗色适配 */
 psw:hover{
   color: var(--font-color) !important;
+}
+/* 进度条暗色适配 */
+[data-theme="dark"] .progress{
+  filter: brightness(.7);
 }
